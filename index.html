@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="H A N G E R — considered clothing for everyday movement." />
+  <title>H A N G E R — Wear Your Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">ALL INDIA DELIVERY AVAILABLE - NO COD & NO REFUND</div>
+  <header class="site-header">
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="wordmark" href="#home">H A N G E R<span>®</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#shop" data-nav-filter="Men">Men</a>
+      <a href="#shop" data-nav-filter="Women">Women</a><a href="#sale">Sale</a><a href="#about">About</a>
+    </nav>
+    <div class="header-actions">
+      <a class="search-link" href="#shop" aria-label="Search products">⌕</a>
+      <button class="icon-btn account-btn" aria-label="Account">♙</button>
+      <button class="cart-trigger" id="cartOpen" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY UNIFORM / 2026</p>
+        <h1>OWN<br>YOUR<br><em>FORM.</em></h1>
+        <p class="hero-description">Everyday essentials. Elevated silhouettes. Made for the way you move.</p>
+        <div class="button-row"><a class="btn btn-dark" href="#shop">Shop collection <span>↗</span></a><a class="text-link" href="#about">Our story ↗</a></div>
+        <div class="hero-index"><span>01 — 03</span><span>NEW SEASON EDITION</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="Fashion model wearing a modern neutral outfit">
+        <div class="hero-stamp">DRESS<br>LIKE<br>YOU.</div>
+        <span class="image-caption">THE NEW STANDARD — SS / 26</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="H A N G E R collection"><div class="ticker-track">HANGER CLOTHING ✳ BUILT FOR EVERYDAY ✳ FORM FOLLOWS YOU ✳  HANGER CLOTHING ✳ BUILT FOR EVERYDAY ✳</div></div>
+
+    <section class="category-feature section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FIT</p><h2>SHOP BY<br><span>YOUR SIDE.</span></h2></div><p>Different moods. One point of view.<br>Explore the collection made for you.</p></div>
+      <div class="category-grid">
+        <a class="category-card women-card" href="#shop" data-category-link="Women"><img src="https://images.unsplash.com/photo-153910ยม?auto=format&fit=crop&w=900&q=80" onerror="this.src='https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80'" alt="Women's fashion"><span class="category-label"><small>01 / THE EDIT</small><strong>WOMEN</strong><b>Explore collection ↗</b></span></a>
+        <a class="category-card men-card" href="#shop" data-category-link="Men"><img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=80" alt="Men's fashion"><span class="category-label"><small>02 / THE EDIT</small><strong>MEN</strong><b>Explore collection ↗</b></span></a>
+      </div>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="shop-top">
+        <div><p class="eyebrow">CURATED FOR YOU / 2026</p><h2>THE COLLECTION<span> (08)</span></h2></div>
+        <p class="shop-note">Pieces that work harder.<br>Wear them your way.</p>
+      </div>
+      <div class="filter-bar">
+        <div class="filter-tabs" role="group" aria-label="Filter products">
+          <button class="filter-btn active" data-filter="All">All pieces</button>
+          <button class="filter-btn" data-filter="Women">Women</button>
+          <button class="filter-btn" data-filter="Men">Men</button>
+        </div>
+        <label class="sort-label">SORT BY <select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="center-action"><button class="btn btn-outline" id="showAll">View all pieces <span>↓</span></button></div>
+    </section>
+
+    <section class="statement section-wrap" id="sale">
+      <div class="statement-image"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1100&q=85" alt="Minimal fashion collection"></div>
+      <div class="statement-copy"><p class="eyebrow">LESS, BUT BETTER</p><h2>GOOD<br>STYLE IS<br><em>PERSONAL.</em></h2><p>Thoughtful staples, confident fits and details that make the everyday feel different.</p><a href="#shop" class="btn btn-light">Explore the edit ↗</a></div>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <p class="eyebrow">A LITTLE ABOUT US</p><h2>MADE TO BE<br><span>WORN YOUR WAY.</span></h2>
+      <div class="about-bottom"><p>Hanger Clothing is about finding confidence in what you wear. We bring together easy silhouettes, versatile essentials and a fresh perspective on everyday dressing.</p><a class="text-link" href="#contact">Get in touch ↗</a></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top"><a class="wordmark footer-logo" href="#home">HANGER<span>®</span></a><p>Wear your form. Make it yours.</p><a href="https://www.instagram.com/hanger.clothing_/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
+    <div class="footer-bottom"><span>© 2026 HANGER CLOTHING</span><span>MADE FOR EVERYDAY</span><a href="#home">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>YOUR BAG <span id="cartTitleCount">(0)</span></h2></div><button class="icon-btn" id="cartClose" aria-label="Close cart">✕</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart">Your bag is looking a little empty.</p></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="btn btn-dark checkout-btn" id="checkoutBtn">Continue to checkout ↗</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
